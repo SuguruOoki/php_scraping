@@ -1,6 +1,7 @@
 <?php
 $dom = new DOMDocument;
 @$dom->loadHTMLFile('http://qiita.com/mpyw');
+var_dump($dom);
 $xpath = new DOMXPath($dom);
 $entries = array_map(
     function ($node) use ($xpath) {
